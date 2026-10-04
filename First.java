@@ -1,22 +1,23 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
+class Student{
+    String name;
+    int age;
+    String address;
+    void display(){
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Address: " + address);
+    }
+}
 public class First{
     public static void main(String[]args){
-        Scanner input = new Scanner(System.in);
-        int sum = 0;
-        int num;
-        do{
-            System.out.println("Enter a number (0 to stop) : ");
-            num = input.nextInt();
-            sum += num;
-        }
-        while(num !=0);
-        { 
-            System.out.println("Program Existed The sum = " + sum);
-        };
-
-    input.close();
- 
+    
+     Student s1 = new Student();
+     s1.name = "John";
+     s1.age = 20;
+     s1.address = "123 Main St";
+     s1.display();
     };
 
 };
