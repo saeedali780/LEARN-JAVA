@@ -120,3 +120,24 @@ public class EmploymentManagementProgram {
         + contEmp.calculateSalary());
     }
 }
+
+
+
+// ==== Four pillars of oop quick revision ==== // 
+
+// 1. Encapsulation
+
+// Data ko private rakha aur access ke liye public getters/setters banaye.
+
+// 2. Abstraction
+
+// Abstract Employee class aur abstract calculateSalary() method banaya.
+
+// 3. Inheritance
+
+// Dono subclasses mein extends Employee use kiya.
+
+// 4. Polymorphism
+
+// Dono subclasses mein calculateSalary() override kiya, 
+// taake har type apne rules ke mutabiq salary calculate kare.
