@@ -1,26 +1,20 @@
 import java.util.Scanner;
 
-class CheckEvenOdd {
-    Scanner sc = new Scanner(System.in);
-    int num;
-
-    CheckEvenOdd() {
-        System.out.print("Enter a number: ");
-        num = sc.nextInt();
-    }
-
-    void checker(int num) {
-        if (num % 2 == 0) {
-            System.out.println(num + " is an even number.");
-        } else {
-            System.out.println(num + " is an odd number.");
-        }
-    }
-}
 
 public class First {
     public static void main(String[] args) {
-        CheckEvenOdd obj = new CheckEvenOdd();
-        obj.checker(obj.num);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        if (num % 3 == 0 && num % 5 == 0) {
+            System.out.println(num + " is a multiple of both 3 and 5.");
+        } else if (num % 3 == 0) {
+            System.out.println(num + " is a multiple of 3.");
+        } else if (num % 5 == 0) {
+            System.out.println(num + " is a multiple of 5.");
+        } else {
+            System.out.println(num + " is not a multiple of either 3 or 5.");
+        }
+        sc.close();
     }
 }
